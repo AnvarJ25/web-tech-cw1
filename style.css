@@ -11,6 +11,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+/* ------------------------NAV BAR------------------------*/
 nav {
     display:flex;
     justify-content: space-around;
@@ -47,6 +48,7 @@ nav ul li a {
     background-color: white;
     margin:5px;
 }
+/* ------------------------responsive nav section------------------------*/
 @media screen and (max-width:1024px) {
     nav ul {
         width:40%;
@@ -75,22 +77,16 @@ nav ul li a {
     }
 
 }
-
+/* ------------------------First Section------------------------*/
+.nav-active {
+    transform:translate(0%);
+}
 .main {
     display:flex;
     align-items: center;
     justify-content: center;
     background-color: #000000;
     height:100vh;
-}
-.offers {
-    height: 100vh;
-    background-color:#113706 ;
-    background-size: cover;
-    display:flex;
-}
-.nav-active {
-    transform:translate(0%);
 }
 .orange{
     color:orange;
@@ -106,27 +102,211 @@ nav ul li a {
     width: 1000px;
     height: 600px;
 }
-.countainer1{
-    width:30%;
-    height:70vh;
-    background-color:white;
-    margin:90px;
-}
-.countainer2{
-    width:30%;
-    height:70vh;
-    background-color:white;
-    margin:90px;
-}
-.countainer3{
-    width:30%;
-    height:70vh;
-    background-color:white;
-    margin:90px;
-}
-.footer {
-    width:100%;
-    height:30vh;
+/* ------------------------Second Section------------------------*/
+.offers {
+    height: 100vh;
+    background-color:#E3A357 ;
+    background-size: cover;
     display:flex;
-    background-color:#03101E;
 }
+.countainer-1, .countainer-3, .countainer-2{ 
+    border-radius: 25px;
+    border:0px solid;
+    width:30%;
+    height:70vh;
+    background-color:#D29153;
+    margin:90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.group-classes, .cleaning, .trainer {
+    font-size: 20px;
+    margin-top:110px;   
+    margin-left:20px;
+    margin-right:20px;
+    text-indent: 1.5em;
+    letter-spacing: 1.5px;
+    color:black;
+}
+.img1, .img2, .img3 {
+    border-radius: 25px;
+    max-width: 480px;
+    max-height: 300px;
+}
+
+/* ------------------------Therd Section------------------------*/
+/* 2 div box wich of them is img and another Table*/
+.schedule {
+    height:80vh;
+    width:100%;
+    display:flex;
+    flex-direction: center;
+    background-color: #E3A357;
+    align-items: center;
+}
+.schedule-div-1, .schedule-div-2{
+    margin:100px 200px;
+}
+/* Button*/
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#4B3215;
+    color:white;
+}
+/* Schedule Table*/
+#table {
+    display: block;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 0 ;
+    overflow: hidden;
+    margin:25px 0;
+    font-size: 0.9rem;
+    min-width:600px;
+}
+#table th {
+    background-color:blueviolet;
+}
+#table tr {
+    border-bottom: 1px solid #dddddd;
+}
+#table tr:nth-of-type(even) {
+    background-color: #e0dada;
+}
+#table th, td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px 15px;
+}
+/*-----------------------------gallery-------------------------*/
+
+.gallery{
+    height:100vh;
+    background-color: #E3A357;
+    max-width: 1920px;
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: center;  
+    justify-content: center;
+}
+.gallery img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.img-box{
+    padding-left: 100px;
+    margin:10px;
+    display: flex;
+    float: left;  
+    display: block;
+}
+.gallery img:hover {
+    cursor: pointer;
+    opacity:0.5;
+    transition: 0.3s;
+}
+.gallery .Title {
+    padding-top:20px;
+}
+/*-----------------------------callback-------------------------*/
+.callback {
+    width:100%;
+    height:80vh;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.request-call-back{
+    color:black;
+    background-color:white;
+    font-size:30px;
+    height:400px;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:40px;
+    padding-right:40px;
+}
+.callback h3{
+    color:white;
+    margin:40px;
+}
+.send-request{
+    cursor:pointer;
+    margin-top:40px;
+    width:100px;
+    padding:5px;
+    border:0.1px solid black;
+    background-color:#E3A357;
+}
+.request-call-back label {
+    float:left;
+    padding-left:40px;
+}
+.request-call-back input {
+    float:right;
+    padding-right:40px;
+}
+/* ------------------------Foote Bottom------------------------*/
+footer{
+    bottom:0;
+}
+.footer-content {
+    bottom: 0;
+    left:0;
+    right:0;
+    width:100%;
+    height:20vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:#111;
+    color:white;
+}
+.footer-content h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: capitalize;
+}
+.footer-content p{
+    max-width:800px;
+    margin: 10px 0;
+    font-size:15px;
+}
+.social-meadia {
+    padding:20px;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: center;
+}
+.social-meadia, li {
+    margin:0 20px;
+}
+.social-meadia, a {
+    color:white;
+}
+.social-meadia a i {
+    font-size:1.5rem;
+}
+.social-meadia a:hover i{
+    color:aqua;
+}
+.footer-bottom {
+    font-size:15px;
+    word-spacing: 3px;
+    text-transform: capitalize;
+}
+
+
